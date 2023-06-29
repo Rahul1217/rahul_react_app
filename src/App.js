@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+ import './App.css';
 
 function App() {
+  const name="Rahul";
+  const age = 33;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="App">
+        <h1>Myname is : {name} and Age is : {age}</h1>
+        <div><input type='number' min={5} max={10}></input></div>
+      </div>
+      <br></br>
+      <div className='App'>
+        <textarea autoFocus={true} spellCheck= {true} style={{backgroundColor: 'red'}}></textarea>
+      </div>
     </div>
   );
 }
