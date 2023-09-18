@@ -9,19 +9,34 @@
 function App() {
 return (
 <div>
-  <div>Personal Digital Assistence</div>
+  <section className='hero is-primary'>
+    <div className='hero-body'>
+      <p className='title'>
+      Personal Digital Assistence
+      </p>
+    </div>
+  </section>
 
 <div className='container'>
   <section className='section'>
     <div className='columns'>
       <div className='column is-4'>
-        <ProfileCard title="Alexa" handle="@Alexa89" image={Alexaimage}></ProfileCard>
+        <ProfileCard title="Alexa" 
+        handle="@Alexa89" 
+        image={Alexaimage}
+        description="test desc1"></ProfileCard>
       </div>
       <div className='column is-4'>
-        <ProfileCard  title="Cortana" handle="@Cortana88" image={Cortanaimage}></ProfileCard>
+        <ProfileCard  title="Cortana" 
+        handle="@Cortana88" 
+        image={Cortanaimage}
+        description="test desc2"></ProfileCard>
       </div>
       <div className='column is-4'>
-        <ProfileCard  title="Siri" handle="@Siri77" image={Siriimage}></ProfileCard>
+        <ProfileCard  title="Siri" 
+        handle="@Siri77" 
+        image={Siriimage}
+        description="test desc3"></ProfileCard>
       </div>
     </div>
   </section>
